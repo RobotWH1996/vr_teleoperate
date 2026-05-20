@@ -63,6 +63,7 @@ avp_teleop_release/
 │   ├── teleop_hand_and_arm.py         ← 硬件入口 (H1_2+DDS)
 │   ├── teleop_hand_and_arm_sim.py     ← 仿真入口 (ROS2)
 │   ├── teleop_hand_and_arm_sim_glove.py ← 手套入口
+│   ├── teleop_hand_and_arm_sim_braincoV2.py ← K100 BrainCo V2 仿真入口
 │   ├── robot_control/
 │   │   ├── robot_arm.py               ← H1 臂部控制 (DDS)
 │   │   ├── robot_hand.py              ← Inspire 手控制 (DDS)
@@ -76,6 +77,12 @@ avp_teleop_release/
 │   │   └── mocap_glove_client.py      ← 动捕手套客户端
 │   └── latency/
 │       └── measure_arm_latency.py     ← 延迟测量工具
+│
+├── assets/                            ← 机器人 URDF 与 mesh
+│   ├── k100_description/              ← K100 + BrainCo 手 (IK/仿真)
+│   └── k100_description_braincoV2/    ← K100 BrainCo V2 型号
+│
+├── examples/k100_arm_demo/            ← K100 手臂 ROS2 控制示例 (PallasSDK)
 │
 └── docs/
     └── TECHNICAL_DOC.md               ← 详细技术文档

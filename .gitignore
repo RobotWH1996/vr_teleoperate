@@ -6,3 +6,5 @@ __pycache__/
 *.log
 latency_logs/
 arm_joint_logs/
+assets/**/*.zip
+*.zip
